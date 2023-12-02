@@ -1,0 +1,5 @@
+Add Upstream Remote: git remote add upstream <URL_of_original_repo>
+
+Fetch Upstream Changes: git fetch upstream
+
+Push Changes to Your Fork: git push origin main
