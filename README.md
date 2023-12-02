@@ -1,0 +1,2 @@
+# GenZTrnd
+New Revolutionize Project
