@@ -1,15 +1,35 @@
 import express from 'express'
 import connect from "./utils/connect.js"
 import dotenv from 'dotenv'
+import authRouter from './routes/auth.js'
+
 
 dotenv.config()
+
+
+
 const app = express()
 
-app.get('/',(req,res)=>{
-    res.json('hi')
-})
+
+// Endpoints
+    // app.get('/',(req,res)=>{
+    //     res.json('hi')
+    // })
+app.use('/auth',authRouter)
 
 
+
+// Middlewares
+
+
+
+
+
+
+
+
+
+// Connection
 const connection = async () =>{
     try {
         await connect(process.env.MONGO_URL)
